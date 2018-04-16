@@ -1,4 +1,4 @@
-update=Tue 10 Apr 2018 03:58:22 PM CEST
+update=Wed 11 Apr 2018 12:01:32 PM CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -43,11 +43,11 @@ LibName32=library/ecomodbus
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=ecomodbus.net
-PadDrill=0
-PadDrillOvalY=0
-PadSizeH=4
-PadSizeV=3
+LastNetListRead=modbus2.net
+PadDrill=0.8000999999999999
+PadDrillOvalY=0.8000999999999999
+PadSizeH=1.99898
+PadSizeV=1.99898
 PcbTextSizeV=1.5
 PcbTextSizeH=1.5
 PcbTextThickness=0.3

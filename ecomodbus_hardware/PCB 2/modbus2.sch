@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:ecoBeat_3-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,7 +30,6 @@ LIBS:contrib
 LIBS:valves
 LIBS:wemos_mini
 LIBS:ecomodbus
-LIBS:ecoBeat_3-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -429,6 +427,29 @@ F 3 "" H 1520 1200 50  0000 C CNN
 	1    1520 1200
 	0    -1   -1   0   
 $EndComp
+$Comp
+L GND #PWR010
+U 1 1 5ACCBB5A
+P 1520 1440
+F 0 "#PWR010" H 1520 1190 50  0001 C CNN
+F 1 "GND" H 1520 1290 50  0000 C CNN
+F 2 "" H 1520 1440 50  0000 C CNN
+F 3 "" H 1520 1440 50  0000 C CNN
+	1    1520 1440
+	1    0    0    -1  
+$EndComp
+Text Label 8705 3055 0    60   ~ 0
+L_IN
+Text Label 8690 3150 0    60   ~ 0
+N_IN
+Text GLabel 8915 3010 0    60   Input ~ 0
+L_IN
+Text GLabel 8915 3110 0    60   Input ~ 0
+N_IN
+Text GLabel 3930 4225 0    60   Input ~ 0
+N_IN
+Text GLabel 3935 4375 0    60   Input ~ 0
+L_IN
 Wire Wire Line
 	2400 1295 2400 1395
 Wire Wire Line
@@ -468,11 +489,9 @@ Wire Wire Line
 Wire Wire Line
 	6000 2325 6000 2910
 Wire Wire Line
-	7380 2610 8740 2610
+	7380 2610 9025 2610
 Wire Wire Line
-	8840 2810 7380 2810
-Wire Wire Line
-	8840 2610 8840 2810
+	7380 2810 8840 2810
 Wire Wire Line
 	7900 2325 7900 2610
 Connection ~ 7900 2610
@@ -538,27 +557,12 @@ Wire Wire Line
 	7405 4090 7405 4645
 Wire Wire Line
 	5385 4585 5385 4525
-$Comp
-L GND #PWR010
-U 1 1 5ACCBB5A
-P 1520 1440
-F 0 "#PWR010" H 1520 1190 50  0001 C CNN
-F 1 "GND" H 1520 1290 50  0000 C CNN
-F 2 "" H 1520 1440 50  0000 C CNN
-F 3 "" H 1520 1440 50  0000 C CNN
-	1    1520 1440
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1520 1400 1520 1440
 Wire Wire Line
 	9025 3010 8915 3010
 Wire Wire Line
 	9025 3110 8915 3110
-Text Label 8705 3055 0    60   ~ 0
-L_IN
-Text Label 8690 3150 0    60   ~ 0
-N_IN
 Wire Wire Line
 	6580 2510 6000 2510
 Connection ~ 6000 2510
@@ -579,18 +583,9 @@ Wire Wire Line
 Wire Wire Line
 	6100 2945 5350 2945
 Connection ~ 5350 2610
-Text GLabel 8915 3010 0    60   Input ~ 0
-L_IN
-Text GLabel 8915 3110 0    60   Input ~ 0
-N_IN
-Text GLabel 3930 4225 0    60   Input ~ 0
-N_IN
-Text GLabel 3935 4375 0    60   Input ~ 0
-L_IN
-Wire Wire Line
-	8840 2610 9025 2610
 Wire Wire Line
 	9025 2710 8740 2710
 Wire Wire Line
-	8740 2710 8740 2610
+	8840 2810 8840 2710
+Connection ~ 8840 2710
 $EndSCHEMATC
